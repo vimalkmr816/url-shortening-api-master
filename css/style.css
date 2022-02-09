@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: "Poppins", sans-serif;
+}
+:root {
+	--cyan: hsl(180, 66%, 49%);
+	--darkViolet: hsl(257, 27%, 26%);
+	--red: hsl(0, 87%, 67%);
+	--gray: hsl(0, 0%, 75%);
+	--grayishViolet: hsl(257, 7%, 63%);
+	--veryDarkBlue: hsl(255, 11%, 22%);
+	--veryDarkViolet: hsl(260, 8%, 14%);
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+section {
+	padding: 0 10rem;
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 1rem 10rem;
+	justify-content: space-between;
+}
+.navbar_child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav_items:first-child {
+	padding: 0;
+}
+.navbar_child {
+	list-style-type: none;
+	padding: 0;
+}
+.nav_items {
+	padding: 0 1rem;
+	font-weight: bold;
+	color: var(--grayishViolet);
+}
+.nav_items > button {
+	font-weight: bold;
+}
+#login_btn {
+	border: none;
+	background: none;
+	color: var(--grayishViolet);
+}
+#signup_btn {
+	border: none;
+	background-color: var(--cyan);
+	padding: 0.5rem 1.5rem;
+	border-radius: 1.875rem;
+}
+.main_section {
+	min-height: fit-content;
+	background-image: url("/images/illustration-working.svg");
+	background-position: 50rem 3rem;
+	background-repeat: no-repeat;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.main_title {
+	max-width: 40vw;
+	font-size: 4rem;
+	font-weight: bold;
+	padding-top: 5rem;
+}
+.main_subtitle {
+	max-width: 40vw;
+	color: var(--grayishViolet);
+}
+#cta_btn {
+	border: none;
+	background-color: var(--cyan);
+	padding: 0.5rem 1.5rem;
+	margin: 1rem 0;
+	color: white;
+	max-width: max-content;
+	border-radius: 1.875rem;
+}
+
+.short_container {
+	background: var(--darkViolet);
+	background-image: url("/images/bg-boost-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	padding: 1rem;
+	position: relative;
+	top: 7rem;
+	border-radius: 10px;
+}
+.main_form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	gap: 1rem;
+}
+.main_form > input {
+	border-radius: 8px;
+	padding: 16px;
+	border: none;
+	width: 80%;
+}
+.main_form > input:focus {
+	outline: none;
+}
+#shorten_btn {
+	border: none;
+	background-color: var(--cyan);
+	padding: 1rem 2rem;
+	margin: 1rem 0;
+	color: white;
+	max-width: max-content;
+	border-radius: 8px;
+}
+.stats {
+	background: rgba(0, 0, 0, 0.025);
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+.top_section {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+.stats_title {
+	font-size: 3rem;
+	font-weight: bold;
+}
+.stats_subtitle {
+	color: var(--grayishViolet);
+}
+.bottom_section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.stats_card {
+	margin: 1rem;
+	padding: 1rem;
+	background: white;
+	border-radius: 10px;
+}
+.card_img {
+	background: var(--darkViolet);
+	border-radius: 50px;
+	position: relative;
+	bottom: 2.5rem;
+	padding: 1rem;
+	width: fit-content;
+}
+.card2 {
+	position: relative;
+	top: 2rem;
+}
+.card3 {
+	position: relative;
+	top: 5rem;
+}
+.stats_card_title > p {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.above_footer {
+	background: var(--darkViolet);
+	background-image: url("/images/bg-boost-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	padding: 3rem;
+}
+.cta_title {
+	font-size: 3rem;
+	font-weight: bold;
+	color: white;
+	margin: 0;
+}
+.stats_card_content {
+	color: var(--grayishViolet);
+}
+.footer {
+	display: flex;
+	align-items: top;
+	justify-content: space-evenly;
+	background: var(--veryDarkViolet);
+	padding: 4rem;
+}
+.footer_links {
+	display: flex;
+	color: whitesmoke;
+	justify-content: center;
+	list-style-type: none;
+}
+.footer_links > ul {
+	list-style-type: none;
+	margin: 0;
+}
+.footer_links > ul > li:first-child {
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	color: whitesmoke;
+}
+
+.footer_links > ul > li {
+	margin: 1rem;
+	color: var(--grayishViolet);
+}
+.socials > img {
+	margin: 0 1rem;
+}
+.attribution {
+	font-size: 11px;
+	background: var(--veryDarkViolet);
+	text-align: center;
+	color: white;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
